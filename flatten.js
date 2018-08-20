@@ -1,3 +1,4 @@
+// 只做一层展开
 function flatten1(arr = []) {
     // return [].concat.apply([], arr);
     return Array.prototype.concat.apply([], arr);
@@ -13,5 +14,3 @@ function flatten2(arr = []) {
 const arr = [1, [2, 3, [4]]];
 
 const newArr = flatten2(arr);
-
-
